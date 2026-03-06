@@ -18,24 +18,6 @@ A simple web application built using **JSP, Servlets, JDBC, and MySQL** that all
 - MySQL
 - Apache Tomcat
 
-## Project Structure
-SMSPortal
-│
-├── controller
-│   ├── LoginServlet
-│   ├── RegisterServlet
-│   ├── LogoutServlet
-│   └── SendMessageServlet
-│
-├── dao
-│   ├── DBConnection
-│   ├── UserDAO
-│   └── MessageDAO
-│
-├── model
-│   ├── User
-│   └── Message
-
 ## Database Setup
 
 CREATE DATABASE sms_portal;
