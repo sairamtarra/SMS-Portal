@@ -1,6 +1,6 @@
 # SMS Portal Web Application
 
-A simple web application built using **JSP, Servlets, JDBC, and MySQL**.
+A simple web application built using **JSP, Servlets, JDBC, and MySQL** that allows users to register, login, and send SMS messages.
 
 ## Features
 - User Registration
@@ -8,6 +8,7 @@ A simple web application built using **JSP, Servlets, JDBC, and MySQL**.
 - Dashboard
 - Send Messages
 - Logout
+- MySQL Database Integration
 
 ## Technologies Used
 - Java
@@ -18,16 +19,26 @@ A simple web application built using **JSP, Servlets, JDBC, and MySQL**.
 - Apache Tomcat
 
 ## Project Structure
-src
- └── com.smsportal
-      ├── controller
-      ├── dao
-      └── model
+SMSPortal
+│
+├── controller
+│   ├── LoginServlet
+│   ├── RegisterServlet
+│   ├── LogoutServlet
+│   └── SendMessageServlet
+│
+├── dao
+│   ├── DBConnection
+│   ├── UserDAO
+│   └── MessageDAO
+│
+├── model
+│   ├── User
+│   └── Message
 
-## Database
+## Database Setup
 
-Run the following SQL:
-
-```sql
 CREATE DATABASE sms_portal;
-USE sms_portal;
+
+## Author
+Sairam Tarra
